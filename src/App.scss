@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(2, 2, 36);
+    color: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+}
+#main-services{
+    height: 100vh;
+}
+#work{
+    height: 150vh;
+}
+@media screen and (max-width: 600px){
+    #main-services{
+        height: 200vh;
+    }
+    #work{
+        height: 175vh;
+    }
+    #about{
+        height: 195vh;
+    }
+}
